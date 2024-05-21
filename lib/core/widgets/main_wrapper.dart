@@ -6,7 +6,7 @@ class MainWrapper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      appBar: AppBar(title: const Text('Test App'),),
+      appBar: AppBar(title: const Text('Weather App'),),
       body: Container(),
     );
   }
