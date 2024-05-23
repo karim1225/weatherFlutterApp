@@ -1,12 +1,17 @@
 part of 'weather_bloc.dart';
 
-class WeatherState {
+// ignore: must_be_immutable
+class WeatherState extends Equatable {
   CwStatus cwStatus;
-  WeatherState({required this.cwStatus});
+  FwStatus fwStatus;
 
-  WeatherState copyWith({CwStatus? newCwStatus}) {
+  WeatherState({required this.cwStatus, required this.fwStatus});
+
+  WeatherState copyWith({CwStatus? newCwStatus, FwStatus? newFwStatus}) {
     return WeatherState(
-      cwStatus: newCwStatus ?? cwStatus,
-    );
+        cwStatus: newCwStatus ?? cwStatus, fwStatus: newFwStatus ?? fwStatus);
   }
+
+  @override
+  List<Object?> get props => [cwStatus, fwStatus];
 }
