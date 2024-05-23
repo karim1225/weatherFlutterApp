@@ -1,5 +1,4 @@
 import 'package:dio/dio.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:weather_app/core/params/forecast_params.dart';
 import 'package:weather_app/core/utils/constants.dart';
 
